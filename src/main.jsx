@@ -27,7 +27,7 @@ function App() {
    
     try {
       const eventSource = new EventSource(
-        "http://localhost:8080/api_etk_article_bd/v1//cards/franchise_franchise_chayma_ben_brahim/876b4010-a1f5-59ee-6516-00759ace26ef/items"
+        "http://localhost:8080/v1/shops"
       );
 
       eventSource.addEventListener("structure", (event) => {
